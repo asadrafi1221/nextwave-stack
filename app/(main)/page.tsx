@@ -15,7 +15,7 @@ function Home() {
         <Button variant="default">Button</Button>
         <Switch />
       </div>
-      <p>{"asad khan"}</p>
+      <p>{"Ui Components Updated"}</p>
     </>
   );
 }
