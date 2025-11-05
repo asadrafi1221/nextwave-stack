@@ -11,6 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+      className="bg-[var(--layoutBg)] text-[var(--layoutColor)]"
       >
         {children}
       </body>

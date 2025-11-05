@@ -1,21 +1,22 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useUserStore } from "@/store/slices/user/store";
 import React from "react";
+import { Button, Input, Switch } from "@/components/global";
 
 function Home() {
- const state = useUserStore((state) => state);
- const {accessToken} = state;
+  const state = useUserStore((state) => state);
+  const { accessToken } = state;
   return (
-    <div className="bg-black min-h-screen ">
-      <Input
-        placeholder="Email"
-        className="border border-white bg-black text-white "
-      />
-      
-    </div>
+    <>
+      <div className="bg-black text-white">
+        <p>Helo</p>
+        <Input placeholder="Email" />
+        <Button variant="default">Button</Button>
+        <Switch />
+      </div>
+      <p>{"asad khan"}</p>
+    </>
   );
 }
 
