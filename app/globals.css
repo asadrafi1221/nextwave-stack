@@ -2,44 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer base {
   :root {
     --primaryBg: 220 80% 50%;
     --primaryColor: 0 0% 100%;
-
     --secondaryBg: 260 60% 45%;
     --secondaryColor: 0 0% 100%;
-
     --layoutBg: 0 0% 100%;
     --layoutColor: 220 15% 10%;
+
+    --title: 'Poppins', sans-serif;
+    --desc: 'Inter', sans-serif;
+    --button: 'Poppins', sans-serif;
   }
 
   .dark {
     --primaryBg: 220 80% 60%;
     --primaryColor: 0 0% 100%;
-
     --secondaryBg: 260 60% 55%;
     --secondaryColor: 0 0% 100%;
-
     --layoutBg: 220 20% 10%;
     --layoutColor: 0 0% 100%;
   }
-}
 
-
-
-
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[hsl(var(--layoutBg))] text-[hsl(var(--layoutColor))];
   }
 }
