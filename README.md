@@ -1,8 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+
+## 🧩 In Progress !
+
+
+##  Next.js Reusable Theme Template
+
+This project is a **fully customizable Next.js starter** designed for developers who want to build **accessible, theme-driven applications** with minimal effort.
+All core colors, fonts, and layout settings are defined using **CSS variables**, so changing one value updates the entire app instantly.
+
+---
+
+## 🚀 Features
+
+* ⚙️ **Fully themable design system** using CSS variables
+* 🌓 **Dark/Light mode** ready with dynamic color variables
+* 🎨 **Global color architecture**:
+
+  * `--primaryBg` / `--primaryColor` — for main sections, inputs, and content
+  * `--secondaryBg` / `--secondaryColor` — for buttons, highlights, and emphasis elements
+  * `--layoutBg` / `--layoutColor` — for body and general layout backgrounds
+* 🔠 **Flexible font system** using:
+
+  * `--title`, `--desc`, `--button` for full typographic control
+* 💨 Built with **Tailwind CSS + TypeScript + Radix UI**
+* 🧩 Ideal for scalable UI systems and reusable templates
+
+---
+
+## 🧱 Folder Structure
+
+```
+app/
+  ├── globals.css        # Theme variables & base styles
+  ├── layout.tsx         # Global layout wrapper
+  └── page.tsx           # Example page
+
+components/
+  ├── ui/                # UI primitives (e.g. Switch, Button)
+  └── ...
+tailwind.config.ts       # Tailwind color + font variable bindings
+```
+
+---
+
+## 🧩 How It Works
+
+All colors and fonts are defined at the **`:root`** level in `globals.css`.
+For example:
+
+```css
+:root {
+  --primaryBg: 220 80% 50%;
+  --primaryColor: 0 0% 100%;
+}
+```
+
+You can customize your entire theme by editing these variables — no need to touch Tailwind config or components.
+Switching to dark mode automatically updates all dependent values.
+
+---
+
+## ⚡ Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +75,20 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view your project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment
 
-## Learn More
+Deploy easily on [Vercel](https://vercel.com/new) — the creators of Next.js.
+For more details, see the [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Vision
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This template is made for developers who believe in **scalable, future-ready design systems**.
+Just update your root variables, and your entire project follows — **no redesign required**.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
