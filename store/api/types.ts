@@ -12,5 +12,5 @@ export interface IAPIResponse<T = unknown> {
   };
 
   /** 🌐 Optional HTTP-like status code */
-  status?: number;
+  status?: string;
 }
