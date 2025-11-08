@@ -7,6 +7,7 @@ import Tooltip from "@/components/global/Tooltip";
 import Badge from "@/components/global/Badge";
 import Card from "@/components/global/Card";
 import Accordion from "@/components/global/Accordion";
+import { Table } from "@/components/global/ThemeTable/Table";
 
 function Home() {
   const state = useUserStore((state) => state);
@@ -21,7 +22,7 @@ function Home() {
       </div>
       <div className="mt-20">
         <Tooltip
-          content={<p>Tooltip</p>}
+          content={"kina mara"}
           side="bottom"
           align="center"
           animation="retro"
@@ -64,6 +65,28 @@ function Home() {
               {
                 title: "Accordion 3",
                 content: <p>Content 3</p>,
+              },
+            ]}
+          />
+        </div>
+
+        <div className="px-44 mt-20 pb-20">
+          <Table
+            data={[
+              {
+                name: "John Doe",
+                age: 30,
+                email: "john.doe@example.com",
+              },
+              {
+                name: "Jane Doe",
+                age: 25,
+                email: "jane.doe@example.com",
+              },
+              {
+                name: "John Doe",
+                age: 30,
+                email: "john.doe@example.com",
               },
             ]}
           />
