@@ -32,17 +32,7 @@ function Home() {
           </p>
         </Tooltip>
         <Badge variant="outline">Default</Badge>
-        <Card className="">
-          <Card.Header>
-            <p>Header</p>
-          </Card.Header>
-          <Card.Content>
-            <p>Content</p>
-          </Card.Content>
-          <Card.Footer>
-            <p>Footer</p>
-          </Card.Footer>
-        </Card>
+       
 
         
 
