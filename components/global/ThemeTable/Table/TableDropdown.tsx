@@ -12,7 +12,7 @@ type MenuOption = {
   icon?: LucideIcon
   onClick?: () => void
   disabled?: boolean
-  visible?: boolean | (() => boolean)
+  visible?: any;
   isHidden?: boolean | (() => boolean)
   render?: () => React.ReactNode
 }

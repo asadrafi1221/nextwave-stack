@@ -44,31 +44,7 @@ function Home() {
           </Card.Footer>
         </Card>
 
-        <div className="px-20">
-          <Accordion
-            className="mt-20"
-            type="multiple"
-            options={[
-              {
-                title: "Accordion 1",
-                content: <p>Content 1</p>,
-              },
-              {
-                title: "Accordion 2",
-                content: (
-                  <div className="flex flex-col gap-5">
-                    <p>heli</p>
-                    <p>juuu</p>
-                  </div>
-                ),
-              },
-              {
-                title: "Accordion 3",
-                content: <p>Content 3</p>,
-              },
-            ]}
-          />
-        </div>
+        
 
         <div className="px-44 mt-20 pb-20">
           <Table
