@@ -5,8 +5,6 @@ import React from "react";
 import { Button, Input, Switch } from "@/components/global";
 import Tooltip from "@/components/global/Tooltip";
 import Badge from "@/components/global/Badge";
-import Card from "@/components/global/Card";
-import Accordion from "@/components/global/Accordion";
 import { Table } from "@/components/global/ThemeTable/Table";
 
 function Home() {
