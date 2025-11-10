@@ -4,7 +4,6 @@ import { useUserStore } from "@/store/slices/user/store";
 import React from "react";
 import { Button, Input, Switch } from "@/components/global";
 import Tooltip from "@/components/global/Tooltip";
-import Badge from "@/components/global/Badge";
 import { Table } from "@/components/global/ThemeTable/Table";
 
 function Home() {
@@ -29,7 +28,6 @@ function Home() {
             {"Ui Components Updated"}
           </p>
         </Tooltip>
-        <Badge variant="outline">Default</Badge>
        
 
         
