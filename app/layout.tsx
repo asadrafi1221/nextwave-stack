@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Nextwave</title>
+        <title>Nextwave --nextjs</title>
       </head>
       <body
       className="bg-[var(--layoutBg)] text-[var(--layoutColor)]"
