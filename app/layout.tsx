@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -12,14 +10,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Nextwave</title>
+        <title>Nextwave nextjs--repo</title>
       </head>
-      <body
-      className="bg-[var(--layoutBg)] text-[var(--layoutColor)]"
-      >
-        <TooltipProvider>
-        {children}
-        </TooltipProvider>
+      <body className="bg-[var(--layoutBg)] text-[var(--layoutColor)]">
+        <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
   );
